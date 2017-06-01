@@ -59,3 +59,6 @@ gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
 # SimpleForm
 gem 'simple_form'
+
+# Devise authentication
+gem 'devise'
