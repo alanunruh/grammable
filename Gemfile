@@ -63,3 +63,6 @@ gem 'simple_form'
 
 # Devise authentication
 gem 'devise'
+
+# Carrierwave image
+gem 'carrierwave', '~> 1.0'
