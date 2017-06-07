@@ -66,3 +66,9 @@ gem 'devise'
 
 # Carrierwave image
 gem 'carrierwave', '~> 1.0'
+
+# Figaro for sensitive information
+gem 'figaro'
+
+# Carrierwave communication with Amazon S3
+gem 'fog-aws'
