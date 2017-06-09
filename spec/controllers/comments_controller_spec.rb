@@ -7,7 +7,7 @@ RSpec.describe CommentsController, type: :controller do
       user = FactoryGirl.create(:user)
       sign_in user
 
-      post :create, params: { gram_id: gram_id, comment: {message: 'awesome gram' } }
+      post :create, params: { gram_id: gram.id, comment: { message: 'awesome gram' } }
       expect(response).to redirect_to root_path
       expect(gram.comments.length).to eq 1
       expect(gram.comments.first.message).to eq "awesome gram"
@@ -15,7 +15,7 @@ RSpec.describe CommentsController, type: :controller do
 
     it "should require a user to be logged in to comment on a gram" do
       gram = FactoryGirl.create(:gram)
-      post :create, params: { gram_id: gram_id, comment: { message: 'awesome gram' } }
+      post :create, params: { gram_id: gram.id, comment: { message: 'awesome gram' } }
       expect(response).to redirect_to new_user_session_path
     end
 
