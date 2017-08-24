@@ -1,24 +1,13 @@
-# README
+# Grammable
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Grammable is an Instagram clone app that lets users share photos of thier adventures. The photos are then shared with their friends where all parties can then comment on the photos.
 
-Things you may want to cover:
+# Features
 
-* Ruby version
+* Amazon Web Services (S3) for photo storage to let users upload photos.
 
-* System dependencies
+* Twitter Bootstrap for CSS and components.
 
-* Configuration
+* PostgreSQL for database queries involving users, photos, and comments.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Devise for user forms and security.
